@@ -28,14 +28,13 @@ class RainbowXylophone extends Column {
     Colors.green,
     Colors.teal,
     Colors.blue,
-    Colors.indigo,
     Colors.purple
   ];
 
   static List<XylophoneBar> getRainbowXylophoneBars() {
     List<XylophoneBar> rainbowBars = [];
     rainbowColors.asMap().forEach((index, color) {
-      XylophoneBar xylophoneBar = XylophoneBar(color, index);
+      XylophoneBar xylophoneBar = XylophoneBar(color, index + 1);
       rainbowBars.add(xylophoneBar);
     });
     return rainbowBars;
